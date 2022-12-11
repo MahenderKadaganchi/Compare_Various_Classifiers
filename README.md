@@ -13,3 +13,7 @@ Shortened link: https://bit.ly/2OZRIYd
 
 Preprocessing:
 The data has been preprocessed using standard scaler for SVM implementation. This method scales data in such a way that the mean value becomes zero and the standard deviation becomes 1. Another preprocessing used for implementing Naïve Bayes and that is Normalization. This process scales data in between 0 and 1. In addition, the Label Encoder has been used to encode the class labels from categorical to numerical values. The preprocessing called Test Train Splitting method has been used to implement all the algorithms.
+
+
+# Data Sets:
+https://github.com/propublica/compas-analysis/
