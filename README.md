@@ -18,6 +18,7 @@ The data has been preprocessed using standard scaler for SVM implementation. Thi
 # Data Sets:
 https://github.com/propublica/compas-analysis/
 
+# Other git hub Codes:
 Magic Gamma Data set analysis for below classifiers is present here: https://github.com/MMagdys/MAGIC-Gamma-Telescope-Classification
 Decision Tree
 AdaBoost
