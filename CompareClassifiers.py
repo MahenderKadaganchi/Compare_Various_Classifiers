@@ -40,7 +40,6 @@ print(size)
 # en.fit(['h','g'])
 # data.loc[:,'class'] = en.transform(data['class'])
 
-# ---------- Decision Tree --------#
 
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_validate
@@ -48,6 +47,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 import sklearn.metrics as metrics
+import GOSDT
 
 # discretizer = KBinsDiscretizer(n_bins=5, encode='ordinal', strategy='kmeans')
 tdata = data
@@ -64,9 +64,16 @@ Y = tdata[[predict]]
 x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=0.3)
 from sklearn.tree import DecisionTreeClassifier
 
+# --------------------------------- #
+# --------------------------------- #
+# ----------    GOSDT      -------- #
+# --------------------------------- #
+# --------------------------------- #
+
 tracemalloc.start()
 startTime = time()
-DT = DecisionTreeClassifier(max_depth=size)
+DT = GOSDT()
+# DT = DecisionTreeClassifier(max_depth=size)
 DT.fit(x_train, y_train)
 DT_predicted = DT.predict(x_test)
 
